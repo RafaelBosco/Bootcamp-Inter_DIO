@@ -16,9 +16,16 @@
 // 	kdowkdpo;
 // }
 
-var currentNumber = document.getElementById("currentnumber")
+var currentNumberWrapper = document.getElementById("currentNumber")
+var currentNumber = 0
 
 function increment() {
-	currentNumber += 1;
-	
+	currentNumber = currentNumber + 1;
+	currentNumberWrapper.innerHTML = currentNumber;
+}
+
+function decrement() {
+	currentNumber = currentNumber - 1;
+	currentNumberWrapper.innerHTML = currentNumber;
+
 }
