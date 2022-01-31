@@ -11,7 +11,7 @@ const getCats = async () => {
 };
 
 const loadImg = async () => {
-	const img = document.getElementsByTagName('img')[0];
+	const img = document.getElementsByTagName('img');
 	img.src = await getCats();
 };
 
@@ -19,5 +19,3 @@ loadImg();
 
 const btn = document.getElementById('change-cat');
 btn.addEventListener('click', loadImg);
-
-loadImg();
